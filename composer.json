@@ -31,7 +31,7 @@
     "require":
     {
         "nails/module-invoice": "dev-develop",
-        "gocardless/gocardless-pro": "4.*"
+        "gocardless/gocardless-pro": "7.*"
     },
     "require-dev":
     {
