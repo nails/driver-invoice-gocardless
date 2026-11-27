@@ -2,6 +2,7 @@
 
 namespace Nails\Invoice\Driver\Payment\GoCardless\Settings;
 
+use Nails\Invoice\Driver\Payment\GoCardless\Admin\Permission;
 use Nails\Common\Helper\Form;
 use Nails\Common\Interfaces;
 use Nails\Common\Service\FormValidation;
@@ -35,9 +36,9 @@ class GoCardless implements Interfaces\Component\Settings
     /**
      * @inheritDoc
      */
-    public function getPermissions(): array
+    public function getPermission(): string
     {
-        return [];
+        return Permission\Settings\GoCardless::class;
     }
 
     // --------------------------------------------------------------------------
